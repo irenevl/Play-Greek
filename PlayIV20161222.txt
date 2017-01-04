@@ -1,0 +1,47 @@
+Play Greek
+
+Repo: https://github.com/alexeiva/play
+Masters: 2
+Instances: 2
+task: review and fix Greek Monotonic set
+
+Review/Approach:
+The initial Greek design in general maintained the squareness of the skeleton used in the Latin, and I intend to keep this approach. Several glyphs – such as gamma, zeta and xi – will benefit from simplified, more mechanical shapes that better match the minimalistic style of the typeface. Some other glyphs need to be closer to the Greek skeleton: e.g. in psi, the middle stroke always ascends. The tonos also needs to be reshaped and repositioned on many base glyphs.
+
+Changes:
+
+1. Uppercase
+
+Replaced with composites from the Latin where possible:
+Alpha=A, Beta=B, Epsilon=E, Zeta=Z, Eta=H, Theta (round counter)=O, Iota=I, Kappa=K, Mu=M, Nu=N, Omicron=O, Rho=P, Tau=T, Upsilon=Y and Chi=X.
+
+I adapted the width and the style of the rest of the uppercase to match the other capitals.
+
+2. Lowercase
+
+I redesigned most of the lowercase, adapting it to the new Latin. The curve-to-straight junctions, as we see in Latin p, are characteristic and are maintained as far as possible.
+
+It also makes sense to simplify the skeleton of some of the Greek letterforms, so they can be more faithful to the spirit of the Latin:
+* gamma: removed the right curve that gave the letter an inappropriate humanist approach 
+* zeta: removed the loop on the top, that was too calligraphic for this style
+* kappa: removed the curved endings of the diagonal strokes, since that was a feature leftover from the previous Latin design
+* xi: removed the top horizontal stroke and made the skeleton more squarish and geometric
+* upsilon: removed the right curve that gave the letter an inappropriate humanist approach 
+* phi: replaced the lower case phi with a more geometric/typographic shape
+
+Modifications of width, stroke weight and optical corrections to glyphs including:
+* delta
+* epsilon
+* sigma
+* chi
+
+Added the number symbols (2 glyphs), Greek question mark, anoteleia (Greek semicolon) and kai (Greek ampersand).
+
+
+Issues:
+The Latin part of Play has extra points on the curves, that in some cases are not vital for defining the shape of the glyph, e.g. n. I removed some of these extra points from the Greek.
+
+Another setback was the compatibility of these outlines. Since Greek is borrowing glyphs from Latin, the compatibility of these Latin glyphs are vital for the Greek set. Some incompatible counters that I came across:
+B, M, O, P, o, v. 
+
+Another thing I noticed was the lack of kerning. The squareness of the shapes allows the typeface to look nice even without it, but I think, especially for some Greek pairs, some basic kerning would be beneficial. I haven't added any kerning, but would like to hear opinions on kerning this typeface.
