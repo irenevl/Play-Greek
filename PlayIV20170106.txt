@@ -7,7 +7,7 @@ task: review and fix Greek Monotonic set
 
 06 January 2017:
 
-added extra glyphs to match “Basic Polytonic Set”:
+added extra glyphs to match “Basic Monotonic Set”:
 
 KaiSymbol
 dialytikatonoscomb
